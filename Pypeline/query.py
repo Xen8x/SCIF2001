@@ -5,9 +5,9 @@ from astropy.io import fits
 from astropy.table import vstack
 from astroquery.vizier import Vizier
 
-path = "DATA_raw/C-19_memberlist_2025.csv"
+path = "DATA_raw/C-19_fullmember.csv"
 write_path = "DATA_clean/c19_pristine_matched_temp.csv"
-cat = "J/A+A/692/A115/pristine_dr1"
+cat = "I/350/gaiaedr3"
 
 ## Open CSV file with member list
 df = pd.read_csv(path)
@@ -16,7 +16,7 @@ ids = df["source_id"].astype(str).tolist()
 ## Query Vizier with member IDs
 v = Vizier(row_limit=-1, columns=["*"])
 results = []
-batch_size = 10
+batch_size = 1
 
 ## Loop through IDs in batches
 for i in range(0, len(ids), batch_size):
