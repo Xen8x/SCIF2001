@@ -24,7 +24,8 @@ def get_data():
 data = pd.read_csv(Filenames.C19_STREAM)
 df = get_data()
 
-## Metallicity 
+## Metallicity distribution for both streams
+## Removing incomplete data (NaN) from dataset to remove errors
 data = data.dropna(subset=['[Fe/H]', 'e_[Fe/H]'])
 df = df.dropna(subset=['feh50', 'feh_calib_std'])
 
@@ -35,8 +36,7 @@ c19_err = data['e_[Fe/H]']
 ph_feh = df['feh50']
 ph_err = df['feh_calib_std']
 
-print("C19 median [Fe/H]:", np.median(c19_feh), "N =", len(c19_feh))
-print("Phoenix median [Fe/H]:", np.median(ph_feh), "N =", len(ph_feh))
+
 
 
 
@@ -60,12 +60,13 @@ plt.hist(ph_feh, bins=bins, density=True, histtype='stepfilled', color=ph_color,
 plt.hist(ph_feh, bins=bins, density=True, histtype='step', color=ph_color, linewidth=1.5)
 plt.axvline(np.median(ph_feh), color=ph_color, linestyle='--', linewidth=1)
 
-
+print("Phoenix median [Fe/H]:", np.median(ph_feh))
+print("C-19 median [Fe/H]:", np.median(c19_feh))
 
 plt.xlim(-4.25, 0)
 plt.xlabel('[Fe/H]')
 plt.ylabel('Normalised density')
-plt.title('Metallicity distribution (dashed = median)')
+plt.title(f'Metallicity distribution ([Fe/H] = )')
 plt.legend(frameon=False)
 plt.grid(alpha=0.25)
 

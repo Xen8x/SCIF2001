@@ -9,12 +9,13 @@ from helper import Filenames
 filepath = 'DATA_raw/s5_pdr1.fits'
 filepath2 = 'DATA_clean/phoenix_stream_clean2.csv'
 
-#File to numpy shennigans 
+# Converts Phoenix Stream raw Fits data into csv for later use in cleaner format
 
 def get_data():
     data = fits.getdata(filepath)
     df = pd.DataFrame(data)
-
+    # Masking criteria for Phoenix stream relevant to the study
+    # Searches for all entries named by "phoenix", primary = 1, and priority = 9 which are high stream canditinates. 
     df = df.astype({'field': str, 'feh50': float, 'vel50': float})
     df = df[df['field'].str.contains("phoenix", case=0)]
 
