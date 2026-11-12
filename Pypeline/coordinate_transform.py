@@ -22,13 +22,15 @@ def get_data():
     return df
 
 
-
+## Read in data
 data = pd.read_csv(Filenames.C19_STREAM)
 # ra=data['ra']
 # dec=data['dec']
 
 df = get_data()
 # https://iopscience.iop.org/article/10.3847/1538-4357/aacdab
+
+## Define Poles and orientation of Streams perspective
 icrsc__phoenix_coords = SkyCoord(ra = 311.2 * u.deg, dec = 14 * u.deg)
 pole = SkyCoord(ra=icrsc__phoenix_coords.icrs.ra, dec=icrsc__phoenix_coords.icrs.dec, frame='icrs')
 iscrsc_c19_coords = SkyCoord(ra = 81.45 * u.degree, dec = -6.346 * u.degree, frame = "icrs")
@@ -48,7 +50,7 @@ ph_stream = PH_coords.transform_to(frame)
 c19_stream = C19_coords.transform_to(frame2)
 
 
-
+## Fitting the stream on the Mollewide projection by warapping it around (-180,180)
 x = ph_stream.phi1.wrap_at(180 * u.degree).radian
 y = ph_stream.phi2.radian
 
@@ -69,6 +71,7 @@ y2 = c19_stream.phi2.radian
 
 # print(x)
 # print(y)
+## Creating Plots of new stream perspective
 fig = plt.figure(figsize=(16, 8),constrained_layout=True)
 ax0 = fig.add_subplot(221, projection='mollweide')
 ax1 = fig.add_subplot(222, projection='mollweide')

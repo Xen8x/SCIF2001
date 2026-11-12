@@ -1,0 +1,100 @@
+SIMPLE  =                    T / Standard FITS Format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    0 / No Image --- just extension(s)                 EXTEND  =                    T / There are standard extensions                  ORIGIN  = 'xml2fits_v1.95'     / Converted from XML-Astrores to FITS                                     e-mail: question@simbad.u-strasbg.fr                   LONGSTRN= 'OGIP 1.0'           / Long string convention (&/CONTINUE) may be usedDATE    = '2026-11-12'         / Written on 2026-11-12:00:23:43 (GMT)                                        by: root@e1256e857bf9.cfa.harvard.edu                       **********************************************************                          EXCERPT from catalogues stored in VizieR (CDS)                                             with the following conditions:                                   **********************************************************                                                                                                      VizieR Astronomical Server vizier.cfa.harvard.edu                               Date: 2026-11-12T00:23:43 [V7.6.1]                                              In case of problem, please report to: cds-question@unistra.fr                                                                                          INFO    = 'service_protocol=ASU' / IVOID of the protocol through which the data                                  was retrieved #                                INFO    = 'request_date=2026-11-12T00:23:43' / Query execution date #           INFO    = 'request=https://vizier.cfa.harvard.edu/viz-bin/asu-fits?-oc.form=de&'CONTINUE  'c&-out.max=unlimited&#out.form=FITS (ascii) Table&-source=J/A+A/626&'CONTINUE  '/A15/tablec5&-order=I&-out=Star&-out=[Fe/H]&-out=e_[Fe/H]&-out=[O/F&'CONTINUE  'e]&-out=e_[O/Fe]&-out=[Na/Fe]&-out=e_[Na/Fe]&-out=[Mg/Fe]&-out=e_[M&'CONTINUE  'g/Fe]&-out=[Ca/Fe]&-out=e_[Ca/Fe]&' / Full request URL (POST) #      INFO    = 'contact=cds-question@unistra.fr' / Email or URL to contact publisher                                  #                                              INFO    = 'server_software=VizieR/7.6.1' / Software version #                   INFO    = 'publisher=CDS'      / Data centre that produced the VOTable #        INFO    = 'ivoid=ivo://cds.vizier/j/a+a/626/a15' / IVOID of underlying data                                      collection #                                                                                                                   INFO    = 'data_ivoid=ivo://cds.vizier/j/a+a/626/a15' / IVOID of underlying data                                 collection #                                                                                                                   INFO    = 'creator=Hill V.'    / First author or institution #                                                                                                  INFO    = 'cites=bibcode:2019A&A...626A..15H' / Article or Data origin sources #                                                                                INFO    = 'journal=A&A'        / Journal name #                                                                                                                 INFO    = 'original_date=2019' / Year of the article publication #                                                                                              INFO    = 'reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/626/A&'CONTINUE  '15      '           / Dataset landing page #                                                                                                         INFO    = 'citation=doi:10.26093/cds/vizier.36260015' / Dataset identifier that                                  can be used for citation #                                                                                                     INFO    = 'publication_date=2021-02-03' / Date of first publication in the data                                  centre #                                                                                                                       INFO    = 'rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html' /                                  Licence URI #                                                                                                                  END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'TABLE   '           / Ascii Table Extension (TAB and NEWLINE sep)    BITPIX  =                    8 / Character data                                 NAXIS   =                    2 / Simple 2-D matrix                              NAXIS1  =                   69 / Number of bytes per record                     NAXIS2  =                   99 / Number of records                              PCOUNT  =                    0 / Get rid of random parameters                   GCOUNT  =                    1 / Only one group (isn't it obvious?)             TFIELDS =                   11 / Number of data fields (columns)                CDS-CAT = 'J/A+A/626/A15'      / Catalogue designation in CDS nomenclature               Sculptor Red Giant Branch stars abundances (Hill+, 2019)               EXTNAME = 'J_A_A_626_A15_tablec5' / Identification of the table                 CDS-NAME= 'J/A+A/626/A15/tablec5' / Table name in METAtab                                Chemical abundances                                                    TBCOL1  =                    2 / UCD=meta.id;meta.main char:7 . offset=1        TFORM1  = 'A7      '           / Fortran Format                                 TTYPE1  = 'Star    '           / Star ID (link)                                 TBCOL2  =                   10 / UCD=phys.abund.Fe float: ..... offset=9        TFORM2  = 'F5.2    '           / Fortran Format                                 TTYPE2  = '__Fe_H_ '           / Fe abundance                                   TBCOL3  =                   16 / UCD=stat.error;phys.abund.Fe float offset=15   TFORM3  = 'F5.2    '           / Fortran Format                                 TTYPE3  = 'e__Fe_H_'           / Error on [Fe/H]                                TBCOL4  =                   22 / UCD=phys.abund float: ........ offset=21       TFORM4  = 'F5.2    '           / Fortran Format                                 TTYPE4  = '__O_Fe_ '           / ? O abundance                                  TBCOL5  =                   28 / UCD=phys.abund float: ........ offset=27       TFORM5  = 'F5.2    '           / Fortran Format                                 TTYPE5  = 'e__O_Fe_'           / ? Error on [O/Fe]                              TBCOL6  =                   34 / UCD=phys.abund float: ........ offset=33       TFORM6  = 'F5.2    '           / Fortran Format                                 TTYPE6  = '__Na_Fe_'           / ? Na abundance                                 TBCOL7  =                   40 / UCD=phys.abund float: ........ offset=39       TFORM7  = 'F5.2    '           / Fortran Format                                 TTYPE7  = 'e__Na_Fe_'          / ? Error on [Na/Fe]                             TBCOL8  =                   46 / UCD=phys.abund float: ........ offset=45       TFORM8  = 'F5.2    '           / Fortran Format                                 TTYPE8  = '__Mg_Fe_'           / ? Mg abundance                                 TBCOL9  =                   52 / UCD=phys.abund float: ........ offset=51       TFORM9  = 'F5.2    '           / Fortran Format                                 TTYPE9  = 'e__Mg_Fe_'          / ? Error on [Mg/Fe]                             TBCOL10 =                   58 / UCD=phys.abund float: ........ offset=57       TFORM10 = 'F5.2    '           / Fortran Format                                 TTYPE10 = '__Ca_Fe_'           / Ca abundance                                   TBCOL11 =                   64 / UCD=phys.abund float: ........ offset=63       TFORM11 = 'F5.2    '           / Fortran Format                                 TTYPE11 = 'e__Ca_Fe_'          / Error on [Ca/Fe]                               END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+ET0009 	-1.68	 0.16	     	     	     	     	 0.57	 0.22	 0.20	 0.07
+ET0013 	-1.68	 0.21	     	     	     	     	 0.53	 0.27	 0.28	 0.10
+ET0024 	-1.24	 0.10	-0.10	 0.20	-0.55	 0.21	     	     	 0.00	 0.14
+ET0026 	-1.80	 0.16	     	     	     	     	 0.44	 0.19	 0.07	 0.06
+ET0027 	-1.50	 0.13	     	     	     	     	 0.12	 0.15	-0.06	 0.04
+ET0028 	-1.22	 0.11	     	     	     	     	-0.09	 0.14	 0.03	 0.07
+ET0031 	-1.68	 0.17	 0.26	 0.23	     	     	 0.51	 0.18	 0.22	 0.06
+ET0033 	-1.77	 0.16	 0.30	 0.23	     	     	 0.27	 0.15	 0.10	 0.08
+ET0035 	-1.95	 0.23	     	     	     	     	 0.77	 0.31	 0.32	 0.10
+ET0039 	-2.10	 0.25	     	     	     	     	 0.52	 0.30	 0.32	 0.13
+ET0043 	-1.24	 0.16	-0.08	 0.24	     	     	-0.20	 0.19	 0.01	 0.09
+ET0048 	-1.90	 0.19	     	     	     	     	 0.58	 0.16	 0.25	 0.07
+ET0051 	-0.92	 0.12	-0.27	 0.25	     	     	-0.01	 0.23	-0.10	 0.14
+ET0054 	-1.81	 0.16	     	     	     	     	 0.35	 0.17	 0.16	 0.06
+ET0057 	-1.33	 0.13	     	     	     	     	 0.13	 0.15	 0.03	 0.09
+ET0059 	-1.53	 0.16	     	     	     	     	 0.06	 0.16	 0.01	 0.06
+ET0060 	-1.56	 0.15	     	     	     	     	 0.45	 0.12	 0.23	 0.07
+ET0062 	-2.27	 0.18	     	     	     	     	 0.67	 0.17	 0.39	 0.07
+ET0063 	-1.18	 0.19	     	     	     	     	 0.13	 0.24	 0.00	 0.10
+ET0064 	-1.38	 0.14	     	     	     	     	 0.14	 0.15	 0.07	 0.06
+ET0066 	-1.30	 0.14	     	     	     	     	 0.15	 0.14	 0.00	 0.07
+ET0067 	-1.65	 0.16	     	     	     	     	 0.28	 0.17	 0.29	 0.06
+ET0069 	-2.11	 0.20	     	     	     	     	 0.57	 0.21	 0.34	 0.09
+ET0071 	-1.35	 0.14	     	     	-0.21	 0.16	 0.00	 0.16	 0.13	 0.08
+ET0073 	-1.53	 0.17	     	     	     	     	 0.33	 0.16	 0.25	 0.03
+ET0083 	-1.97	 0.18	     	     	     	     	 0.54	 0.15	 0.22	 0.04
+ET0094 	-1.86	 0.15	     	     	     	     	 0.64	 0.18	 0.14	 0.05
+ET0095 	-2.16	 0.20	 0.35	 0.22	     	     	 0.57	 0.12	 0.19	 0.07
+ET0097 	-1.91	 0.16	     	     	     	     	 0.19	 0.16	 0.24	 0.06
+ET0103 	-1.21	 0.13	     	     	     	     	 0.07	 0.19	-0.02	 0.07
+ET0104 	-1.62	 0.17	 0.33	 0.21	     	     	 0.37	 0.15	 0.25	 0.07
+ET0109 	-1.85	 0.11	     	     	     	     	 0.55	 0.14	 0.15	 0.06
+ET0113 	-2.18	 0.19	     	     	     	     	 0.45	 0.14	 0.23	 0.07
+ET0121 	-2.35	 0.20	     	     	     	     	 0.41	 0.17	 0.31	 0.10
+ET0126 	-1.11	 0.16	     	     	     	     	-0.12	 0.19	-0.14	 0.10
+ET0132 	-1.50	 0.15	     	     	     	     	 0.20	 0.15	 0.15	 0.06
+ET0133 	-1.07	 0.15	-0.19	 0.21	     	     	-0.08	 0.18	 0.03	 0.10
+ET0137 	-0.89	 0.18	-0.27	 0.25	-0.83	 0.27	-0.07	 0.21	-0.10	 0.14
+ET0138 	-1.70	 0.15	 0.14	 0.21	     	     	 0.30	 0.16	 0.18	 0.06
+ET0139 	-1.41	 0.11	     	     	     	     	 0.02	 0.21	-0.02	 0.07
+ET0141 	-1.68	 0.15	     	     	     	     	 0.45	 0.19	 0.19	 0.06
+ET0147 	-1.15	 0.16	-0.19	 0.32	     	     	 0.01	 0.24	-0.03	 0.12
+ET0150 	-0.93	 0.11	     	     	     	     	-0.29	 0.19	 0.02	 0.10
+ET0151 	-1.77	 0.16	     	     	     	     	 0.34	 0.15	 0.31	 0.05
+ET0158 	-1.80	 0.21	     	     	     	     	 0.34	 0.21	 0.17	 0.08
+ET0160 	-1.16	 0.14	-0.18	 0.19	     	     	-0.05	 0.17	 0.03	 0.10
+ET0163 	-1.86	 0.21	     	     	     	     	 0.36	 0.17	 0.15	 0.10
+ET0164 	-1.89	 0.22	     	     	     	     	 0.27	 0.19	 0.29	 0.11
+ET0165 	-1.10	 0.17	     	     	     	     	 0.02	 0.21	-0.05	 0.07
+ET0166 	-1.49	 0.15	     	     	 0.09	 0.21	 0.30	 0.16	 0.16	 0.05
+ET0168 	-1.10	 0.17	-0.17	 0.28	     	     	-0.18	 0.22	 0.09	 0.09
+ET0173 	-1.47	 0.10	     	     	     	     	 0.19	 0.18	-0.01	 0.10
+ET0198 	-1.16	 0.17	     	     	     	     	 0.02	 0.19	-0.12	 0.07
+ET0200 	-1.49	 0.19	     	     	     	     	 0.20	 0.23	 0.16	 0.07
+ET0202 	-1.32	 0.19	     	     	     	     	 0.09	 0.32	 0.19	 0.08
+ET0206 	-1.33	 0.17	     	     	     	     	 0.12	 0.19	 0.10	 0.09
+ET0232 	-1.00	 0.18	     	     	     	     	-0.10	 0.17	 0.02	 0.07
+ET0236 	-2.41	 0.21	     	     	     	     	 0.42	 0.22	 0.29	 0.12
+ET0237 	-1.61	 0.18	 0.26	 0.31	     	     	 0.34	 0.24	 0.35	 0.08
+ET0238 	-1.57	 0.17	     	     	     	     	 0.38	 0.16	 0.17	 0.06
+ET0239 	-2.26	 0.21	     	     	     	     	 0.63	 0.19	 0.33	 0.13
+ET0240 	-1.15	 0.17	     	     	     	     	 0.15	 0.23	 0.06	 0.07
+ET0241 	-1.41	 0.17	     	     	     	     	 0.13	 0.17	 0.12	 0.05
+ET0242 	-1.32	 0.17	     	     	     	     	-0.02	 0.13	 0.04	 0.06
+ET0244 	-1.24	 0.17	 0.00	 0.24	     	     	 0.01	 0.16	 0.03	 0.06
+ET0270 	-1.56	 0.16	     	     	     	     	 0.35	 0.16	 0.28	 0.05
+ET0275 	-1.21	 0.16	     	     	     	     	     	     	-0.10	 0.08
+ET0299 	-1.83	 0.18	     	     	     	     	     	     	 0.20	 0.09
+ET0300 	-1.39	 0.20	     	     	     	     	-0.06	 0.25	 0.03	 0.07
+ET0317 	-1.69	 0.19	     	     	     	     	 0.20	 0.19	 0.13	 0.07
+ET0320 	-1.71	 0.21	     	     	     	     	 0.22	 0.19	 0.04	 0.09
+ET0321 	-1.93	 0.18	 0.25	 0.25	     	     	 0.55	 0.17	 0.28	 0.07
+ET0322 	-2.04	 0.27	     	     	     	     	 0.74	 0.25	 0.29	 0.16
+ET0327 	-1.32	 0.16	     	     	     	     	-0.12	 0.18	 0.06	 0.07
+ET0330 	-2.00	 0.24	     	     	     	     	 0.40	 0.24	 0.17	 0.09
+ET0339 	-1.08	 0.14	     	     	     	     	-0.54	 0.18	-0.10	 0.11
+ET0342 	-1.35	 0.20	     	     	     	     	-0.12	 0.24	 0.08	 0.11
+ET0350 	-1.90	 0.21	     	     	     	     	 0.26	 0.20	 0.39	 0.09
+ET0354 	-1.07	 0.20	     	     	     	     	-0.02	 0.23	-0.05	 0.09
+ET0363 	-1.28	 0.17	     	     	     	     	 0.16	 0.19	 0.05	 0.08
+ET0369 	-2.35	 0.20	     	     	     	     	 0.22	 0.19	 0.31	 0.14
+ET0373 	-1.96	 0.21	     	     	     	     	 0.34	 0.23	 0.11	 0.10
+ET0376 	-1.17	 0.17	 0.01	 0.31	     	     	-0.23	 0.25	 0.01	 0.09
+ET0378 	-1.18	 0.15	     	     	 0.07	 0.25	 0.11	 0.25	-0.07	 0.07
+ET0379 	-1.65	 0.18	     	     	     	     	-0.07	 0.23	 0.16	 0.06
+ET0382 	-1.74	 0.23	     	     	     	     	 0.35	 0.22	 0.28	 0.09
+ET0384 	-1.46	 0.22	     	     	     	     	-0.08	 0.25	 0.07	 0.10
+ET0389 	-1.60	 0.22	     	     	     	     	 0.23	 0.30	 0.25	 0.08
+ET0392 	-1.48	 0.20	     	     	     	     	 0.09	 0.22	 0.23	 0.06
+UET0049	-2.18	 0.20	 0.65	 0.26	 0.16	 0.23	 0.41	 0.14	 0.27	 0.08
+UET0065	-1.17	 0.15	-0.03	 0.19	-0.76	 0.14	 0.00	 0.17	 0.02	 0.10
+UET0074	-1.15	 0.17	-0.01	 0.29	-0.89	 0.26	-0.02	 0.31	 0.00	 0.09
+UET0082	-1.15	 0.15	 0.00	 0.18	-0.47	 0.18	 0.00	 0.17	-0.08	 0.11
+UET0112	-2.04	 0.18	 0.67	 0.19	     	     	 0.43	 0.13	 0.08	 0.08
+UET0127	-1.72	 0.17	 0.31	 0.26	-0.22	 0.21	 0.07	 0.29	-0.01	 0.08
+UET0130	-2.20	 0.21	 0.81	 0.23	 0.84	 0.19	 0.36	 0.23	 0.28	 0.11
+UET0143	-1.77	 0.18	 0.07	 0.24	-0.32	 0.25	 0.17	 0.25	 0.51	 0.09
+UET0145	-1.51	 0.18	-0.10	 0.24	-0.45	 0.26	 0.00	 0.26	-0.08	 0.07
+UET0152	-0.99	 0.16	-0.07	 0.25	-0.99	 0.21	-0.45	 0.28	 0.17	 0.13                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
